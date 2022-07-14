@@ -6,6 +6,20 @@
 
 
     <TextView
+        android:id="@+id/tvID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tvID" />
+
+    <EditText
+        android:id="@+id/etID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <TextView
         android:id="@+id/tvTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -73,7 +87,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/rb2" />
-I CANT SEE UR GODDADM TASKBAR OH
+
         <RadioButton
             android:id="@+id/rb3"
             android:layout_width="wrap_content"
@@ -96,24 +110,39 @@ I CANT SEE UR GODDADM TASKBAR OH
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="333dp">
+        android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/btnInsert"
+            android:id="@+id/btnUpdate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:layout_weight="@integer/material_motion_duration_long_1"
-            android:text="@string/btnInsert" />
+            android:text="@string/btnUpdate" />
 
         <Button
-            android:id="@+id/btnShow"
+            android:id="@+id/btnDelete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="5dp"
             android:layout_weight="@integer/material_motion_duration_long_1"
-            android:text="@string/btnShow" />
+            android:text="@string/btnDelete" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/btnCancel" />
     </LinearLayout>
 
 </LinearLayout>

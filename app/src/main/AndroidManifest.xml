@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NDPSongs">
         <activity
+            android:name=".editSongs"
+            android:exported="false" />
+        <activity
+            android:name=".listSongs"
+            android:exported="false" />
+        <activity
+            android:name=".Song"
+            android:exported="false" />
+        <activity
+            android:name=".DBHelper"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
