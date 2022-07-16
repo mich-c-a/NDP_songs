@@ -53,5 +53,19 @@ public class Song implements Serializable {
     public void setStars(int stars) {
         this.stars = stars;
     }
+
+    @Override
+    public String toString(){
+        String stars = "";
+        for (int i = 0; i< getStars(); i++){
+            stars += "*";
+        }
+
+        String output =  getTitle() + "\n"
+                + getSingers() + " - " + getYear() + "\n"
+                + stars;
+        return output;
+
+    }
 }
 

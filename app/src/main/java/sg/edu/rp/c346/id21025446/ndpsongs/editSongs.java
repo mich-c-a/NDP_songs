@@ -38,13 +38,12 @@ public class editSongs extends AppCompatActivity {
         etTitle.setText(data.getTitle());
         etSinger.setText(data.getSingers());
         etYear.setText(String.valueOf(data.getYear()));
-        for (int x = 0; x<rgRating.getChildCount(); x++){
-            if(Integer.parseInt(rgRating.getChildAt(x).toString()) == data.getStars()){
-                rgRating.check(x);
-                break;
-            }
-        }
-
-
+//        for (int x = 0; x<rgRating.getChildCount(); x++){
+//
+//            if(Integer.parseInt(rgRating. == data.getStars()){
+//                rgRating.check(x);
+//                break;
+//            }
+//        }
     }
 }
